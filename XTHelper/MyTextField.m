@@ -28,8 +28,6 @@
     return self;
 }
 
-
-
 - (instancetype)initWithCoder:(NSCoder *)coder
 {
     self = [super initWithCoder:coder];
@@ -37,7 +35,6 @@
     {
         
         self.borderStyle        = UITextBorderStyleNone ;
-        
 //        CGColorRef cgColor      = COLOR_LIGHT_GRAY.CGColor ;
         float      width        = 1.0f ;
 //        self.layer.borderColor  = cgColor ;
@@ -45,13 +42,9 @@
         self.layer.cornerRadius = 5.0  ;
         
         self.autocorrectionType = UITextAutocorrectionTypeNo;
-        
         self.adjustsFontSizeToFitWidth = YES;
-        
         self.minimumFontSize    = 12.0f;
-        
         self.font = [UIFont systemFontOfSize:12.0f] ;
-        
     }
     
     return self;
@@ -66,7 +59,6 @@
     self.font              = [UIFont systemFontOfSize:12.0f] ;
 }
 
-
 #pragma mark --
 #pragma mark - re write set text bounds rect
 
@@ -74,7 +66,6 @@
 
 - (CGRect)textRectForBounds:(CGRect)bounds
 {
-    
     CGRect tempRect = CGRectMake(FLEX_WIDTHS, 0, bounds.size.width - FLEX_WIDTHS, bounds.size.height) ;
     
     return tempRect ;
@@ -83,7 +74,6 @@
 
 - (CGRect)placeholderRectForBounds:(CGRect)bounds
 {
-    
     CGRect tempRect = CGRectMake(FLEX_WIDTHS, 0, bounds.size.width - FLEX_WIDTHS, bounds.size.height) ;
     
     return tempRect ;
@@ -91,7 +81,6 @@
 
 - (CGRect)editingRectForBounds:(CGRect)bounds
 {
-    
     CGRect tempRect = CGRectMake(FLEX_WIDTHS, 0, bounds.size.width - FLEX_WIDTHS, bounds.size.height) ;
     
     return tempRect ;
