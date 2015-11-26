@@ -14,13 +14,13 @@
 @implementation XTAnimation
 
 // in cell small big ;
-+ (CABasicAnimation *)smallBigBestInCell
++ (CABasicAnimation *)smallBigBestInCellWithSideRate:(CGFloat)rate duration:(CGFloat)duration
 {
-    CATransform3D tran = CATransform3DMakeScale(0.96, 0.96, 1) ;
+    CATransform3D tran = CATransform3DMakeScale(rate, rate, 1) ;
     CABasicAnimation* animation ;
     animation = [CABasicAnimation animationWithKeyPath:@"transform"] ;
     animation.toValue= [NSValue valueWithCATransform3D:tran] ;
-    animation.duration= 0.25 ;
+    animation.duration= duration ;
     animation.autoreverses = YES ;
     animation.cumulative = YES ;
     animation.removedOnCompletion = YES ;
@@ -30,13 +30,13 @@
     return animation ;
 }
 
-+ (void)smallBigBestInCell:(UIView *)view
++ (void)smallBigBestInCell:(UIView *)view sideRate:(CGFloat)rate duration:(CGFloat)duration
 {
-    CATransform3D tran = CATransform3DMakeScale(0.98, 0.98, 1) ;
+    CATransform3D tran = CATransform3DMakeScale(rate, rate, 1) ;
     CABasicAnimation* animation ;
     animation = [CABasicAnimation animationWithKeyPath:@"transform"] ;
     animation.toValue= [NSValue valueWithCATransform3D:tran] ;
-    animation.duration= 0.25 ;
+    animation.duration= duration ;
     animation.autoreverses = YES ;
     animation.cumulative = YES ;
     animation.removedOnCompletion = YES ;
@@ -52,7 +52,6 @@
 + (CABasicAnimation *)opacityForever_Animation:(float)time //永久闪烁的动画
 
 {
-    
     CABasicAnimation *animation=[CABasicAnimation animationWithKeyPath:@"opacity"];
     
     animation.fromValue=[NSNumber numberWithFloat:1.0];
@@ -126,7 +125,6 @@
 + (CABasicAnimation *)moveY:(float)time Y:(NSNumber *)y AndWithReciever:(id)reciever      //纵向移动
 
 {
-    
     CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform.translation.y"];
     
     animation.toValue = y;
@@ -140,7 +138,6 @@
     animation.fillMode = kCAFillModeForwards;
     
     return animation;
-    
 }
 
 

@@ -16,8 +16,8 @@
 @interface XTAnimation : NSObject
 
 // in cell small big ;
-+ (CABasicAnimation *)smallBigBestInCell ;
-+ (void)smallBigBestInCell:(UIView *)view ;
++ (CABasicAnimation *)smallBigBestInCellWithSideRate:(CGFloat)rate duration:(CGFloat)duration ;
++ (void)smallBigBestInCell:(UIView *)view sideRate:(CGFloat)rate duration:(CGFloat)duration ;
 //永久闪烁的动画
 + (CABasicAnimation *)opacityForever_Animation:(float)time  ;
 //有闪烁次数的动画

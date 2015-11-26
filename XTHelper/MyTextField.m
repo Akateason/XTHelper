@@ -33,7 +33,6 @@
     self = [super initWithCoder:coder];
     if (self)
     {
-        
         self.borderStyle        = UITextBorderStyleNone ;
 //        CGColorRef cgColor      = COLOR_LIGHT_GRAY.CGColor ;
         float      width        = 1.0f ;
