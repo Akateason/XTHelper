@@ -11,12 +11,7 @@
 
 @implementation XTTickConvert
 
-
-
 #pragma mark -- tick转换
-
-#define TICK_S_OR_SS_1   1000.0
-#define TICK_S_OR_SS_2   1.0
 
 //转tick,转进
 + (long long)getTickWithDate:(NSDate *)_date
@@ -89,9 +84,9 @@
 //    NSLog(@"[date getMonth] : %d",[date getMonth]) ;
 //    NSLog(@"[curDate getDay] : %d",[curDate getDay]) ;
 //    NSLog(@"[date getDay] : %d",[date getDay]) ;
-    int year = (int)([curDate getYear] - [date getYear]);
-    int month = (int)([curDate getMonth] - [date getMonth]);
-    int day = (int)([curDate getDay] - [date getDay]);
+//    int year = (int)([curDate getYear] - [date getYear]);
+//    int month = (int)([curDate getMonth] - [date getMonth]);
+//    int day = (int)([curDate getDay] - [date getDay]);
     
     NSTimeInterval retTime = 1.0;
     if (time == 0) {

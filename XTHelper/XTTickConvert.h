@@ -6,15 +6,16 @@
 //  Copyright (c) 2014年 JGBMACMINI01. All rights reserved.
 //
 
-
-#define TIME_STR_FORMAT_1       @"yyyy 年 MM 月 dd 日"
-#define TIME_STR_FORMAT_2       @"yyyy年MM月dd日"
-#define TIME_STR_FORMAT_3       @"YYYY-MM-dd HH:mm:ss"
-#define TIME_STR_FORMAT_4       @"YYYYMMddHHmmss"
-#define TIME_STR_FORMAT_5       @"YYYY-MM-dd"
-#define TIME_STR_FORMAT_6       @"YYYY-MM-dd HH:mm"
-#define TIME_STR_FORMAT_7       @"MM-dd"
-#define TIME_STR_FORMAT_8       @"MM-dd HH:mm"
+static NSString * const TIME_STR_FORMAT_1 =      @"yyyy 年 MM 月 dd 日" ;
+static NSString * const TIME_STR_FORMAT_2 =      @"yyyy年MM月dd日" ;
+static NSString * const TIME_STR_FORMAT_3 =      @"YYYY-MM-dd HH:mm:ss" ;
+static NSString * const TIME_STR_FORMAT_4 =      @"YYYYMMddHHmmss" ;
+static NSString * const TIME_STR_FORMAT_5 =      @"YYYY-MM-dd" ;
+static NSString * const TIME_STR_FORMAT_6 =      @"YYYY-MM-dd HH:mm" ;
+static NSString * const TIME_STR_FORMAT_7 =      @"MM-dd" ;
+static NSString * const TIME_STR_FORMAT_8 =      @"MM-dd HH:mm" ;
+static const float  TICK_S_OR_SS_1 = 1000.0 ;
+static const float  TICK_S_OR_SS_2 = 1.0 ;
 
 #import <Foundation/Foundation.h>
 
