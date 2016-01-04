@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D757CD511BFACAFC00335795 /* XTTickConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = D757CD501BFACAFC00335795 /* XTTickConvert.m */; };
+		D74D494D1C3A406700FBF02A /* NSDate+Ticker.m in Sources */ = {isa = PBXBuildFile; fileRef = D74D494C1C3A406700FBF02A /* NSDate+Ticker.m */; };
 		D757CD541BFACB2000335795 /* XTVerification.m in Sources */ = {isa = PBXBuildFile; fileRef = D757CD531BFACB2000335795 /* XTVerification.m */; };
 		D757CD571BFACB4A00335795 /* XTFileManager.m in Sources */ = {isa = PBXBuildFile; fileRef = D757CD561BFACB4A00335795 /* XTFileManager.m */; };
 		D757CD5A1BFACB8100335795 /* XTAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = D757CD591BFACB8100335795 /* XTAnimation.m */; };
@@ -52,8 +52,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D757CD4F1BFACAFC00335795 /* XTTickConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTTickConvert.h; sourceTree = "<group>"; };
-		D757CD501BFACAFC00335795 /* XTTickConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTTickConvert.m; sourceTree = "<group>"; };
+		D74D494B1C3A406700FBF02A /* NSDate+Ticker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSDate+Ticker.h"; sourceTree = "<group>"; };
+		D74D494C1C3A406700FBF02A /* NSDate+Ticker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSDate+Ticker.m"; sourceTree = "<group>"; };
 		D757CD521BFACB2000335795 /* XTVerification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTVerification.h; sourceTree = "<group>"; };
 		D757CD531BFACB2000335795 /* XTVerification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XTVerification.m; sourceTree = "<group>"; };
 		D757CD551BFACB4A00335795 /* XTFileManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XTFileManager.h; sourceTree = "<group>"; };
@@ -138,8 +138,6 @@
 				D757CD591BFACB8100335795 /* XTAnimation.m */,
 				D757CD551BFACB4A00335795 /* XTFileManager.h */,
 				D757CD561BFACB4A00335795 /* XTFileManager.m */,
-				D757CD4F1BFACAFC00335795 /* XTTickConvert.h */,
-				D757CD501BFACAFC00335795 /* XTTickConvert.m */,
 				D757CD521BFACB2000335795 /* XTVerification.h */,
 				D757CD531BFACB2000335795 /* XTVerification.m */,
 			);
@@ -237,6 +235,8 @@
 		D7E9AE6E1BF46F68003EA15E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				D74D494B1C3A406700FBF02A /* NSDate+Ticker.h */,
+				D74D494C1C3A406700FBF02A /* NSDate+Ticker.m */,
 				D7E9AE6F1BF46F98003EA15E /* NSDate+Addition.h */,
 				D7E9AE701BF46F98003EA15E /* NSDate+Addition.m */,
 				D7E9AE721BF46FE7003EA15E /* NSString+Addition.h */,
@@ -387,9 +387,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D757CD511BFACAFC00335795 /* XTTickConvert.m in Sources */,
 				D757CD571BFACB4A00335795 /* XTFileManager.m in Sources */,
 				D757CD541BFACB2000335795 /* XTVerification.m in Sources */,
+				D74D494D1C3A406700FBF02A /* NSDate+Ticker.m in Sources */,
 				D7E9AE801BF477E4003EA15E /* UIColor+Addition.m in Sources */,
 				D7E9AE421BF46F37003EA15E /* ViewController.m in Sources */,
 				D7E9AE3F1BF46F37003EA15E /* AppDelegate.m in Sources */,
